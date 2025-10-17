@@ -13,7 +13,7 @@ public class TutorialUIHandle : MonoBehaviour
     [SerializeField] private TextMeshProUGUI m_buttonNameText;
     [SerializeField] private TextMeshProUGUI m_buttonContenText;
     [SerializeField] private Canvas canvas;
-    public event Action OnEndTutorial;
+   // public event Action OnEndTutorial;
     private void OnEnable()
     {
         SetUp();
@@ -46,6 +46,6 @@ public class TutorialUIHandle : MonoBehaviour
     }
     public void TutorialEnd()
     {
-        OnEndTutorial?.Invoke();
+        //OnEndTutorial?.Invoke();
     }
 }

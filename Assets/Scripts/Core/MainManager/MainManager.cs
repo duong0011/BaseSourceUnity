@@ -58,6 +58,7 @@ public class MainManager : Singleton<MainManager>
 
     private void LoadNewScene(GameObject prefab)
     {
+        if (TransitionManager.Instance().IsRunningTransition) return;
         GameObject _tmp = null;
         if(isFirstLoad)
         {

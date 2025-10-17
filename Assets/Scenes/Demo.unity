@@ -495,6 +495,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Menu
       objectReference: {fileID: 0}
+    - target: {fileID: 4593384856686372059, guid: aad213820eb761d44a787c2f1718c1d0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7175504151267940248, guid: aad213820eb761d44a787c2f1718c1d0, type: 3}
       propertyPath: m_SortingOrder
       value: 10
