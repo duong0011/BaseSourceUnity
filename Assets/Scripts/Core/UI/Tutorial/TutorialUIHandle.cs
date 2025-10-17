@@ -13,12 +13,12 @@ public class TutorialUIHandle : MonoBehaviour
     [SerializeField] private TextMeshProUGUI m_buttonNameText;
     [SerializeField] private TextMeshProUGUI m_buttonContenText;
     [SerializeField] private Canvas canvas;
-   // public event Action OnEndTutorial;
+    public event Action OnEndTutorial;
     private void OnEnable()
     {
         SetUp();
         ShowStep(0);
-        
+
     }
     private void SetUp()
     {
@@ -33,7 +33,7 @@ public class TutorialUIHandle : MonoBehaviour
     }
     private void ShowStep(int index)
     {
-        
+
         if (index < 0 || index >= tutorialData.Data.Count)
         {
             MainManager.Instance.LoadMenu();
@@ -46,6 +46,7 @@ public class TutorialUIHandle : MonoBehaviour
     }
     public void TutorialEnd()
     {
-        //OnEndTutorial?.Invoke();
+        AudioManager.Instance.StopAll();
+        OnEndTutorial?.Invoke();
     }
 }

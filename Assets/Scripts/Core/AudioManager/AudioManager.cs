@@ -21,7 +21,12 @@ public class AudioManager : Singleton<AudioManager>
     //=============================
     // PLAY METHODS
     //=============================
-
+    public void StopAll()
+    {
+        m_musicAudioSource.Stop();
+        m_SFXAudioSource.Stop();
+        m_narrationAudioSource.Stop();
+    }
     public void PlayMusic(AudioClip clip)
     {
         m_musicAudioSource.Stop();
@@ -114,11 +119,5 @@ public class AudioManager : Singleton<AudioManager>
     public void PlaySFXButtonClick()
     {
         PlaySFX(m_buttonClickSFX);
-    }
-    public void StopAll()
-    {
-        m_musicAudioSource.Stop();
-        m_SFXAudioSource.Stop();
-        m_narrationAudioSource.Stop();
     }
 }
