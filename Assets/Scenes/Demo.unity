@@ -633,7 +633,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4593384856686372059, guid: aad213820eb761d44a787c2f1718c1d0, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4840285644420723790, guid: aad213820eb761d44a787c2f1718c1d0, type: 3}
       propertyPath: m_Type
@@ -1355,7 +1355,7 @@ MonoBehaviour:
   m_expGO: {fileID: 658475552}
   m_tutorialGO: {fileID: 198531091}
   m_menuGO: {fileID: 1914251600}
-  m_transitionSettings: {fileID: 11400000, guid: 057babd6f13132c449650d99e3c4e99c, type: 2}
+  m_transitionSettings: {fileID: 11400000, guid: 013263c83b6a84c4d95beaa8bd163ac8, type: 2}
   m_startMode: 0
 --- !u!1 &1912326010
 GameObject:
@@ -1553,10 +1553,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8470713870057958994, guid: 1a26d0afdaf18cb41971199d2b06544e, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 8598804425415745212, guid: 1a26d0afdaf18cb41971199d2b06544e, type: 3}
+    - {fileID: 4103934856972599817, guid: 1a26d0afdaf18cb41971199d2b06544e, type: 3}
+    - {fileID: 6877777816951207462, guid: 1a26d0afdaf18cb41971199d2b06544e, type: 3}
+    - {fileID: 5609732171715702988, guid: 1a26d0afdaf18cb41971199d2b06544e, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a26d0afdaf18cb41971199d2b06544e, type: 3}
