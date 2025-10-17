@@ -120,4 +120,10 @@ public class AudioManager : Singleton<AudioManager>
     {
         PlaySFX(m_buttonClickSFX);
     }
+    public void StopAll()
+    {
+        m_musicAudioSource.Stop();
+        m_SFXAudioSource.Stop();
+        m_narrationAudioSource.Stop();
+    }
 }

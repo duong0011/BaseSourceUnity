@@ -24,7 +24,8 @@ namespace EasyTransition
         {
             instance = this;
         }
-
+        public bool IsRunningTransition => runningTransition;
+        
         public static TransitionManager Instance()
         {
             if (instance == null)
